@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <center><h1 style="color:red;">Hey! This is a bulb You can switch it on/off</h1></center>
+    <head>
+        <Style>
+            button {padding :10px;margin:20px;background-color: yellowgreen;}
+        </Style>
+    </head>
+    <script>
+        function light(value)
+        {
+            var pic;
+                if (value==0)
+                {
+                    pic="off.png"
+                }
+                else
+                {
+                    pic="on.png"
+                }
+                document.getElementById('bulb').src=pic;
+        }
+    </script>
+   <center><img id ="bulb" src="off.png" width="220" height="300"></center> 
+    <br>
+   <center><button onclick="light(1)">Turn On</button>
+    <button onclick="light(0)">Turn Off</button></center> 
+    <center><h1 style="color: blue;">Hope you liked it :)</h1></center>
+    
+</body>
+</html>
